@@ -1,7 +1,10 @@
 def prime?(num)
-    num.to_a.each do |i|
+     if num < 2
+      return false
+    else
+    (2..(num - 1)).each do |i|
       return false if num % i == 0
-    end 
+    end
     true
-
+  end 
 end
